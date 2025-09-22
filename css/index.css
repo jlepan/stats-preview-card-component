@@ -1,0 +1,49 @@
+@import url(variables.css);
+@import url(fonts.css);
+@import url(components/stats-preview-card.css);
+
+html {
+    font-size: 15px;
+}
+
+#body {
+    background-color: var(--customBackgroundBody);
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.purple {
+    color: var(--customPurple);
+}
+
+#footer {
+    color: var(--paragraph)
+}
+
+.link-underline-custom {
+    text-decoration-color: var(--customPurpleOpacity0);
+    transition: text-decoration-color 0.3s ease-in;
+}
+
+.link-underline-custom:hover {
+    text-decoration-color: var(--customPurple);
+}
+
+@media only screen and (max-width: 992px) {
+    #main {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #body {
+        padding-bottom: 80px !important
+    }
+    #main {
+        width: 95%;
+    }
+    #footer {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+    }
+}
